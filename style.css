@@ -973,3 +973,29 @@ body[data-theme="night"] .skill-card p {
 #skills {
   scroll-margin-top: 100px;
 }
+
+/* 🎀 Hero buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  cursor: pointer;
+}
+
+.hero-buttons .primary-button,
+.hero-buttons .soft-button {
+  padding: 12px 20px;
+  border-radius: 999px;
+}
