@@ -841,3 +841,129 @@ body[data-theme="night"] .professional-card p {
     transition: none;
   }
 }
+
+/* ✨ TECHNICAL SKILLS */
+
+.skills-section {
+  margin: 36px 0;
+  padding: 30px;
+  border: 1px solid #f0d5e8;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #fff5fa, #f4efff);
+}
+
+.skills-heading {
+  max-width: 650px;
+  margin: 0 auto 26px;
+  text-align: center;
+}
+
+.skills-eyebrow {
+  color: #b65b91;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.skills-heading h2 {
+  margin: 8px 0 12px;
+  color: #71466c;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+}
+
+.skills-heading h2 span {
+  color: #df83b6;
+}
+
+.skills-heading > p:last-child {
+  color: #806d80;
+  line-height: 1.7;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skill-card {
+  min-width: 0;
+  padding: 20px 14px;
+  text-align: center;
+  border: 1px solid #efd9e9;
+  border-radius: 19px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 22px rgba(148, 91, 130, 0.12);
+}
+
+.skill-icon {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.skill-card h3 {
+  margin: 0 0 8px;
+  color: #674764;
+  font-size: 1rem;
+}
+
+.skill-card p {
+  margin: 0;
+  color: #806d80;
+  font-size: 0.83rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 🌙 Night mode */
+body[data-theme="night"] .skills-section {
+  background: linear-gradient(145deg, #28213d, #211b34);
+  border-color: #4d3c67;
+}
+
+body[data-theme="night"] .skill-card {
+  background: rgba(43, 35, 64, 0.85);
+  border-color: #4d3c67;
+}
+
+body[data-theme="night"] .skills-heading h2,
+body[data-theme="night"] .skill-card h3 {
+  color: #f0e3ff;
+}
+
+body[data-theme="night"] .skills-heading p,
+body[data-theme="night"] .skill-card p {
+  color: #d0c1e2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card {
+    transition: none;
+  }
+
+  .skill-card:hover {
+    transform: none;
+  }
+}
+
