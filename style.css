@@ -966,4 +966,8 @@ body[data-theme="night"] .skill-card p {
     transform: none;
   }
 }
-
+/* Smooth navigation for the new sections */
+#about,
+#skills {
+  scroll-margin-top: 100px;
+}
