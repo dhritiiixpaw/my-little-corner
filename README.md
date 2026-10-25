@@ -11,6 +11,11 @@ My Little Corner is a personal website built to explore web development through 
 
 ![My Little Corner homepage](screenshots/Screenshot%202026-10-25%20211046.png)
 
+![My Little Corner - Moonlight mode](screenshots/Screenshot%202026-10-25%20211213.png)
+
+![My Little Corner - Third preview](screenshots/Screenshot%202026-10-25%20211247.png)
+
+
 ## ✨ Features
 
 - 🌷 **Mood check-in:** pick how you feel (happy, calm, tired, meh) and get a gentle response
