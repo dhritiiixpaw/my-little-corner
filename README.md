@@ -6,6 +6,11 @@ My Little Corner is a personal website built to explore web development through 
 
 🌐 **Live website:** [Visit My Little Corner](https://dhritiiixpaw.github.io/my-little-corner/)
 
+
+## 🖼️ Preview
+
+![My Little Corner homepage](screenshots/Screenshot%202026-10-25%20211046.png)
+
 ## ✨ Features
 
 - 🌷 **Mood check-in:** pick how you feel (happy, calm, tired, meh) and get a gentle response
