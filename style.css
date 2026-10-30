@@ -550,16 +550,35 @@ section + section {
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   margin-top: 22px;
 }
 
-.contact-link {
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 13px 22px;
   border: 1px solid #e9c9f2;
-  background: white;
+  border-radius: 20px;
+
+  background: #ffffff;
   color: #7654b5;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(155, 99, 139, 0.08);
+  transition: all 0.2s ease;
 }
 
+.contact-links a:hover {
+  background: #fff0f8;
+  border-color: #edb6d7;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(155, 99, 139, 0.15);
+}
 /* -------------------------
    FUN CORNER / OLD WIDGETS
 ------------------------- */
