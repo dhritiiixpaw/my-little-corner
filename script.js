@@ -96,7 +96,7 @@ $("#bestieBtn").addEventListener("click", () => {
 });
 
 // Journal auto-save (this browser only)
-const journal = $("#journal"), saveStatus = $("#saveStatus");
+const journal = $("#journalInput"), saveStatus = $("#saveStatus");
 try { journal.value = localStorage.getItem("mlc-journal") || ""; }
 catch { saveStatus.textContent = "Your note may not save in this browser."; }
 journal.addEventListener("input", () => {

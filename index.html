@@ -1,32 +1,39 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Little Corner ♡</title>
+
+  <title>Dhritileena Roy | Data Analyst & Developer</title>
+
+  <meta name="description" content="Dhritileena Roy is a B.Tech Data Science graduate building data dashboards, web applications, and interactive projects.">
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
-  
-<!-- ✨ DECORATIVE FLOATING MAGIC -->
-<div id="magicLayer" class="magic-layer" aria-hidden="true"></div>
-<!-- ✨ END FLOATING MAGIC -->
 
-  <!-- 🎀 FLOATING PASTEL NAVIGATION -->
+<body>
+
+<!-- DECORATIVE MAGIC -->
+<div id="magicLayer" class="magic-layer" aria-hidden="true"></div>
+
+<!-- NAVIGATION -->
 <nav class="floating-nav" aria-label="Main navigation">
+
   <a class="nav-brand" href="#top">♡ my little corner</a>
 
- <button
-  class="theme-toggle"
-  id="themeToggle"
-  type="button"
-  aria-label="Switch to moonlight mode"
-  aria-pressed="false"
->
-  🌙 Moonlight
-</button>
- <button
+  <button
+    class="theme-toggle"
+    id="themeToggle"
+    type="button"
+    aria-label="Switch to moonlight mode"
+    aria-pressed="false"
+  >
+    🌙 Moonlight
+  </button>
+
+  <button
     class="nav-toggle"
     id="navToggle"
     type="button"
@@ -39,181 +46,432 @@
 
   <div class="nav-links" id="navLinks">
     <a href="#top">home 🏠</a>
-    <a href="#tea-court">tea court 🍵</a>
-    <a href="#projects">my projects 🎀</a>
     <a href="#about">about me ✿</a>
-    <a href="#skills">my skills 💻</a>
-    <a href="#journal">little journal 🦢</a>
+    <a href="#projects">projects 🎀</a>
+    <a href="#skills">skills 💻</a>
+    <a href="#contact">contact ♡</a>
+    <a href="#fun-corner">fun corner 🌷</a>
   </div>
+
 </nav>
+
 <div class="nav-spacer" aria-hidden="true"></div>
-<!-- 🎀 END FLOATING NAVIGATION -->
+
 <main class="page">
-  
+
+<!-- HERO -->
 <header class="hero" id="top">
-  <p class="eyebrow">✿ HELLO! I'M ✿</p>
-  <h1>Dhritileena <em>Roy ♡</em></h1>
+
+  <p class="eyebrow">B.TECH DATA SCIENCE GRADUATE ✿</p>
+
+  <h1>
+    Dhritileena <em>Roy ♡</em>
+  </h1>
+
   <p class="subtitle">
-    A curious developer who loves building creative,
-    slightly weird things on the internet. 🎀
+    Data Analyst &amp; Developer
+    <br>
+    Python · SQL · Data Visualization · Web Development
   </p>
+
+  <p class="hero-description">
+    I build data dashboards and web applications,
+    combining analytical thinking with creative problem-solving.
+    I'm currently looking for entry-level Data Analyst,
+    Business Analyst, and junior developer opportunities.
+  </p>
+
   <div class="hero-buttons">
-    <a class="primary-button" href="#projects">explore my projects ✨</a>
-    <a class="soft-button" href="#about">get to know me ♡</a>
+
+    <a class="primary-button" href="#projects">
+      explore my projects ✨
+    </a>
+
+    <a class="soft-button" href="#contact">
+      get in touch ♡
+    </a>
+
   </div>
+
 </header>
 
-  <section class="section-heading">
-    <div><h2>Your gentle check-in</h2><p>There's no wrong way to feel today.</p></div>
-    <span class="sparkles">✧ ✿ ✧</span>
-  </section>
-  <div class="grid">
-    <section class="card">
-      <h3>🌷 How are you feeling?</h3><p>Pick the little face that feels most like you right now.</p>
-      <div class="moods" id="moods">
-        <button class="mood" data-mood="happy" type="button"><span>😊</span>happy</button>
-        <button class="mood" data-mood="calm" type="button"><span>😌</span>calm</button>
-        <button class="mood" data-mood="tired" type="button"><span>🥹</span>tired</button>
-        <button class="mood" data-mood="meh" type="button"><span>🫠</span>meh</button>
-      </div>
-      <p class="feedback" id="moodMessage" aria-live="polite">Your feelings are welcome here ♡</p>
-    </section>
-    <section class="card">
-      <h3>📝 Tiny things for today</h3><p>Little steps count, too. Add one thing you'd like to do.</p>
-      <form id="todoForm" class="todo-form">
-        <label class="sr-only" for="todoInput">A tiny task</label>
-        <input id="todoInput" type="text" placeholder="e.g. drink some water..." maxlength="120" autocomplete="off">
-        <button class="primary-button" type="submit">+ Add</button>
-      </form>
-      <ul id="todoList" class="todo-list"></ul><p class="hint">Every tiny step counts.</p>
-    </section>
-    <section class="card quote-card">
-      <h3>💌 A note to your heart</h3>
-      <blockquote id="quote">Small beginnings can hold the prettiest possibilities.</blockquote>
-      <div class="button-row">
-        <button class="soft-button" id="newQuote" type="button">another little reminder ↗</button>
-       <button class="bestie-button" id="bestieBtn" type="button">girl, elaborate?? 💅</button>
-</div>
-</section>
 
-<section class="card personality-card">
-  <h3>🎀 Choose Your Vibe</h3>
-  <p id="personalityMessage">
-    Your little corner, your rules, bestie. 💗
-  </p>
-
-  <label for="personalitySlider">
-    Current energy: <strong id="personalityLabel">Bestie Mode</strong>
-  </label>
-
-  <input
-    type="range"
-    id="personalitySlider"
-    min="1"
-    max="5"
-    value="3"
-    step="1"
-  />
-
-  <div class="personality-scale">
-    <span>🪽 Angel</span>
-    <span>💋 Menace</span>
-  </div>
-</section>
-
-<section class="card tea-card" id="tea-court">
-  <h3>🌹 The Tea Court</h3>
-  <p>Drop the lore. The court is listening.</p>
-
-  <textarea
-    id="teaInput"
-    placeholder="so basically, this person..."
-    rows="5"
-    maxlength="1000"
-  ></textarea>
-
-  <button class="bestie-button" id="judgeTea" type="button">
-    submit evidence 💅
-  </button>
-
-  <div id="teaVerdict" class="tea-verdict" aria-live="polite" hidden></div>
-</section>
-</div>
-
-<!-- 💻 THINGS I'VE MADE: PORTFOLIO SECTION -->
-
-<!-- 🎀 PROFESSIONAL INTRODUCTION -->
+<!-- ABOUT ME -->
 <section class="professional-section" id="about">
+
   <div class="professional-heading">
-   
-<p class="professional-eyebrow">A LITTLE ABOUT ME ✿</p>
-<h2>hiii, I'm <span>Dhritileena!</span> ♡</h2>
-<p>
-  I'm a Computer Science and Engineering student specializing
-  in Data Science, a curious mind, and a developer who loves
-  bringing unusual ideas to life.
-</p>
-<p>
-  From AI-powered projects to interactive websites and tiny
-  3D worlds, I love building creative, slightly weird things
-  just to see what I can make. I'm always experimenting,
-  learning new technologies, and turning random ideas into
-  real projects — one little adventure at a time. 🪄
-</p>
-<p>
-  currently learning, creating &amp; probably overthinking
-  my next project ♡
-</p>
+
+    <p class="professional-eyebrow">A LITTLE ABOUT ME ✿</p>
+
+    <h2>hiii, I'm <span>Dhritileena!</span> ♡</h2>
+
+    <p>
+      I'm a B.Tech Computer Science &amp; Engineering graduate
+      specializing in Data Science. I enjoy exploring data,
+      building interactive applications, and turning ideas
+      into useful projects.
+    </p>
+
+    <p>
+      I'm developing my skills through hands-on practice,
+      personal projects, and experimenting with different
+      technologies. I'm interested in roles where I can
+      learn, contribute, and grow.
+    </p>
 
   </div>
 
   <div class="professional-grid">
+
     <article class="professional-card">
+
       <span class="professional-icon">🎓</span>
+
       <h3>Education</h3>
+
       <p class="professional-degree">
         B.Tech in Computer Science &amp; Engineering
         (Data Science)
       </p>
-      <p class="professional-detail">Year: 2026</p>
+
+      <p class="professional-detail">
+        Graduated: 2026
+      </p>
+
     </article>
 
     <article class="professional-card">
+
+      <span class="professional-icon">📊</span>
+
+      <h3>Data &amp; Analytics</h3>
+
+      <p>
+        Exploring datasets, analyzing patterns,
+        and creating dashboards to make information
+        easier to understand.
+      </p>
+
+    </article>
+
+    <article class="professional-card">
+
       <span class="professional-icon">💻</span>
-      <h3>What I Build</h3>
+
+      <h3>Web Development</h3>
+
       <p>
-        From interactive web experiences to AI-powered projects,
-        I enjoy turning ideas into things people can explore.
+        Building interactive websites and applications
+        while learning how different technologies
+        work together.
       </p>
+
     </article>
 
-    <article class="professional-card">
-      <span class="professional-icon">🌷</span>
-      <h3>What I'm Looking For</h3>
-      <p>
-        Opportunities to learn, collaborate, showcase my work,
-        and grow through real-world projects.
-      </p>
-    </article>
   </div>
+
 </section>
-    
-<!-- ✨ TECHNICAL SKILLS -->
+
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+
+  <div class="projects-heading">
+
+    <p class="projects-eyebrow">
+      A LITTLE COLLECTION OF MY WORK ✿
+    </p>
+
+    <h2>Things I've Made <span>♡</span></h2>
+
+    <p>
+      Projects I've worked on while learning,
+      experimenting, and bringing ideas to life.
+    </p>
+
+  </div>
+
+  <div class="projects-grid">
+
+
+    <!-- PROJECT 1: TWEETLENS -->
+    <article class="project-card">
+
+      <div class="project-art project-pink">
+        <span>📊</span>
+        <p>read between the tweets ✿</p>
+      </div>
+
+      <div class="project-info">
+
+        <span class="project-status">♡ live project</span>
+
+        <h3>TweetLens</h3>
+
+        <p>
+          An interactive dashboard that analyzes tweets
+          to explore sentiment, emotions, and
+          crime-related categories. Includes charts,
+          dataset uploads, and downloadable results.
+        </p>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Streamlit</span>
+          <span>Data Analysis</span>
+          <span>NLP</span>
+        </div>
+
+        <div class="project-buttons">
+
+          <a
+            class="project-link"
+            href="https://tweetlens-8wcnatwmc4adkrwcd8xqsx.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ✨ Live Demo
+          </a>
+
+          <a
+            class="project-link"
+            href="https://github.com/dhritiiixpaw/TweetLens"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💻 GitHub
+          </a>
+
+        </div>
+
+        <p class="project-note">
+          Portfolio version of a college group project ♡
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 2: COLLEGE BUDDY AI -->
+    <article class="project-card">
+
+      <div class="project-art project-lavender">
+        <span>🎓</span>
+        <p>your college bestie ✿</p>
+      </div>
+
+      <div class="project-info">
+
+        <span class="project-status">✧ AI project</span>
+
+        <h3>College Buddy AI</h3>
+
+        <p>
+          An AI-powered college chatbot designed to help
+          students get answers to college-related questions.
+          Built with Python, Flask, and Gemini AI.
+        </p>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>Gemini AI</span>
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+
+        <div class="project-buttons">
+
+          <a
+            class="project-link"
+            href="https://college-buddy-ai-1.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ✨ Live Demo
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 3: CINNAMOROLL 3D VIEWER -->
+    <article class="project-card">
+
+      <div class="project-art project-peach">
+        <span>☁️</span>
+        <p>little cloud magic ✿</p>
+      </div>
+
+      <div class="project-info">
+
+        <span class="project-status">✧ live project</span>
+
+        <h3>Cinnamoroll 3D Viewer</h3>
+
+        <p>
+          An interactive 3D viewer featuring webcam hand
+          tracking, smooth rotation, and dreamy
+          day and night modes.
+        </p>
+
+        <div class="project-tags">
+          <span>Three.js</span>
+          <span>JavaScript</span>
+          <span>MediaPipe</span>
+          <span>3D</span>
+        </div>
+
+        <div class="project-buttons">
+
+          <a
+            class="project-link"
+            href="https://dhritiiixpaw.github.io/cinnamoroll-3d-viewer/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ☁️ Play with Cinnamoroll
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 4: FACULTY FEEDBACK SYSTEM -->
+    <article class="project-card">
+
+      <div class="project-art project-lavender">
+        <span>📝</span>
+        <p>feedback made simple ✿</p>
+      </div>
+
+      <div class="project-info">
+
+        <span class="project-status">✧ college project</span>
+
+        <h3>Faculty Feedback System</h3>
+
+        <p>
+          A web application developed to help students
+          submit faculty feedback online. Includes
+          student login, feedback submission, and
+          faculty and feedback data management.
+        </p>
+
+        <div class="project-tags">
+          <span>MongoDB</span>
+          <span>Express.js</span>
+          <span>React</span>
+          <span>Node.js</span>
+        </div>
+
+        <p class="project-note">
+          College group project ♡
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 5: MY LITTLE CORNER -->
+    <article class="project-card">
+
+      <div class="project-art project-pink">
+        <span>🎀</span>
+        <p>my little corner</p>
+      </div>
+
+      <div class="project-info">
+
+        <span class="project-status">✿ personal project</span>
+
+        <h3>My Little Corner</h3>
+
+        <p>
+          A cozy interactive portfolio website with
+          personality sliders, a dramatic Tea Court,
+          affirmations, and little daily check-ins.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="project-buttons">
+
+          <a
+            class="project-link"
+            href="https://dhritiiixpaw.github.io/my-little-corner/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🎀 Visit Website
+          </a>
+
+          <a
+            class="project-link"
+            href="https://github.com/dhritiiixpaw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💻 GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- SKILLS -->
 <section class="skills-section" id="skills">
+
   <div class="skills-heading">
+
     <p class="skills-eyebrow">MY LEARNING TOOLKIT ♡</p>
-  <h2>Learning by <span>building.</span></h2>
-  <p>
-  I'm developing my skills through hands-on projects,
-  experimenting with new technologies, and learning as I go.
-</p>
+
+    <h2>Learning by <span>building.</span></h2>
+
+    <p>
+      Technologies I've explored through coursework,
+      hands-on projects, and personal experimentation.
+    </p>
+
   </div>
 
   <div class="skills-grid">
+
     <article class="skill-card">
       <span class="skill-icon">🐍</span>
       <h3>Python</h3>
-      <p>Programming &amp; problem-solving</p>
+      <p>Programming &amp; data analysis</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-icon">🗄️</span>
+      <h3>SQL</h3>
+      <p>Queries &amp; working with data</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-icon">📊</span>
+      <h3>Data Visualization</h3>
+      <p>Exploring data through charts</p>
     </article>
 
     <article class="skill-card">
@@ -229,21 +487,9 @@
     </article>
 
     <article class="skill-card">
-      <span class="skill-icon">🗄️</span>
-      <h3>SQL</h3>
-      <p>Working with data</p>
-    </article>
-
-    <article class="skill-card">
       <span class="skill-icon">🌶️</span>
       <h3>Flask</h3>
       <p>Python web applications</p>
-    </article>
-
-    <article class="skill-card">
-      <span class="skill-icon">📊</span>
-      <h3>Data Science</h3>
-      <p>Exploring data and insights</p>
     </article>
 
     <article class="skill-card">
@@ -257,139 +503,265 @@
       <h3>MediaPipe</h3>
       <p>Hand tracking &amp; interaction</p>
     </article>
+
   </div>
+
 </section>
 
-<section class="projects-section" id="projects">
-  <div class="projects-heading">
-    <p class="projects-eyebrow">a little collection of my creativity ✿</p>
-    <h2>Things I've Made <span>♡</span></h2>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+
+  <div class="contact-heading">
+
+    <p class="contact-eyebrow">LET'S CONNECT ✿</p>
+
+    <h2>Get in <span>touch.</span></h2>
+
     <p>
-      Tiny ideas, big dreams, and things I'm learning along the way.
+      I'm looking for entry-level Data Analyst,
+      Business Analyst, and junior developer opportunities.
+      I'd love to connect!
     </p>
-  </div>
-
-  <div class="projects-grid">
-
-    <!-- PROJECT 1: MY LITTLE CORNER -->
-    <article class="project-card">
-      <div class="project-art project-pink">
-        <span>🎀</span>
-        <p>my little corner</p>
-      </div>
-
-      <div class="project-info">
-        <span class="project-status">✿ in progress</span>
-        <h3>My Little Corner</h3>
-        <p>
-          A cozy, interactive website with a personality slider,
-          a dramatic Tea Court, affirmations, and more.
-        </p>
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-        <p class="project-note">My current learning project ♡</p>
-      </div>
-    </article>
-
-    <!-- PROJECT 2: COLLEGE BUDDY AI -->
-    <article class="project-card">
-      <div class="project-art project-lavender">
-        <span>🎓</span>
-        <p>your college bestie ✿</p>
-      </div>
-
-      <div class="project-info">
-        <h3>College Buddy AI</h3>
-        <p>
-          A little AI chatbot built to help with college questions.
-          Made with Python, Flask, and Gemini, then deployed online!
-        </p>
-        <div class="project-tags">
-          <span>Python</span>
-          <span>Flask</span>
-          <span>Gemini AI</span>
-          <span>Render</span>
-        </div>
-        <div class="project-buttons">
-          <a
-            class="project-link"
-            href="https://college-buddy-ai-1.onrender.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >✨ Live Demo</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- PROJECT 3: CINNAMOROLL 3D VIEWER -->
-    <article class="project-card">
-      <div class="project-art project-peach">
-        <span>☁️</span>
-        <p>little cloud magic ✿</p>
-      </div>
-
-      <div class="project-info">
-        <span class="project-status">✧ live project</span>
-        <h3>Cinnamoroll 3D Viewer</h3>
-        <p>
-          An interactive 3D Cinnamoroll viewer with webcam hand tracking,
-          smooth rotation, and dreamy day and night modes.
-        </p>
-        <div class="project-tags">
-          <span>Three.js</span>
-          <span>JavaScript</span>
-          <span>MediaPipe</span>
-          <span>3D</span>
-        </div>
-        <div class="project-buttons">
-          <a
-            class="project-link"
-            href="https://dhritiiixpaw.github.io/cinnamoroll-3d-viewer/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >☁️ Play with Cinnamoroll</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- PROJECT 4: FUTURE PROJECT -->
-    <article class="project-card">
-      <div class="project-art project-peach">
-        <span>🦢</span>
-        <p>work in progress</p>
-      </div>
-
-      <div class="project-info">
-        <span class="project-status">♡ on the wishlist</span>
-        <h3>Something in the Works</h3>
-        <p>
-          Another tiny idea that will eventually become
-          a real project, one line of code at a time.
-        </p>
-        <div class="project-tags">
-          <span>Ideas</span>
-          <span>Growth</span>
-        </div>
-        <p class="project-note">Future me has plans 💗</p>
-      </div>
-    </article>
 
   </div>
+
+  <div class="contact-links">
+
+    <!-- Replace YOUR_EMAIL_HERE with your email address -->
+    <a href="mailto:YOUR_EMAIL_HERE">
+      ✉️ Email me
+    </a>
+
+    <a
+      href="https://github.com/dhritiiixpaw"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      💻 GitHub
+    </a>
+
+    <!-- Add your LinkedIn link here when ready -->
+    <!-- Add your resume PDF link here when ready -->
+
+  </div>
+
 </section>
-<!-- 💻 END OF PROJECT GALLERY -->
 
- <section class="card" id="journal">
-      <h3>🦢 A thought to keep</h3><p>A tiny journal for whatever is on your mind.</p>
-     <label class="sr-only" for="journalInput">Your journal note</label>
-      <textarea id="journalInput" placeholder="Dear diary..." rows="5"></textarea>
-      <div class="journal-footer"><p class="hint" id="saveStatus">Your note stays in this browser.</p><button class="clear-button" id="clearJournal" type="button">clear note</button></div>
-    </section>
+
+<!-- FUN CORNER -->
+<section id="fun-corner">
+
+  <div class="section-heading">
+
+    <div>
+      <h2>A little corner of fun 🌷</h2>
+      <p>Because life isn't just about being productive.</p>
+    </div>
+
+    <span class="sparkles">✧ ✿ ✧</span>
+
   </div>
-  <footer>made with <span>♥</span> and a little bit of daydreaming</footer>
+
+  <div class="grid">
+
+    <!-- MOOD CHECK-IN -->
+    <section class="card">
+
+      <h3>🌷 How are you feeling?</h3>
+
+      <p>Pick the little face that feels most like you right now.</p>
+
+      <div class="moods" id="moods">
+
+        <button class="mood" data-mood="happy" type="button">
+          <span>😊</span>happy
+        </button>
+
+        <button class="mood" data-mood="calm" type="button">
+          <span>😌</span>calm
+        </button>
+
+        <button class="mood" data-mood="tired" type="button">
+          <span>🥹</span>tired
+        </button>
+
+        <button class="mood" data-mood="meh" type="button">
+          <span>🫠</span>meh
+        </button>
+
+      </div>
+
+      <p class="feedback" id="moodMessage" aria-live="polite">
+        Your feelings are welcome here ♡
+      </p>
+
+    </section>
+
+
+    <!-- TODO -->
+    <section class="card">
+
+      <h3>📝 Tiny things for today</h3>
+
+      <p>Little steps count, too. Add one thing you'd like to do.</p>
+
+      <form id="todoForm" class="todo-form">
+
+        <label class="sr-only" for="todoInput">A tiny task</label>
+
+        <input
+          id="todoInput"
+          type="text"
+          placeholder="e.g. drink some water..."
+          maxlength="120"
+          autocomplete="off"
+        >
+
+        <button class="primary-button" type="submit">
+          + Add
+        </button>
+
+      </form>
+
+      <ul id="todoList" class="todo-list"></ul>
+
+      <p class="hint">Every tiny step counts.</p>
+
+    </section>
+
+
+    <!-- AFFIRMATIONS -->
+    <section class="card quote-card">
+
+      <h3>💌 A note to your heart</h3>
+
+      <blockquote id="quote">
+        Small beginnings can hold the prettiest possibilities.
+      </blockquote>
+
+      <div class="button-row">
+
+        <button class="soft-button" id="newQuote" type="button">
+          another little reminder ↗
+        </button>
+
+        <button class="bestie-button" id="bestieBtn" type="button">
+          girl, elaborate?? 💅
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- PERSONALITY SLIDER -->
+    <section class="card personality-card">
+
+      <h3>🎀 Choose Your Vibe</h3>
+
+      <p id="personalityMessage">
+        Your little corner, your rules, bestie. 💗
+      </p>
+
+      <label for="personalitySlider">
+        Current energy:
+        <strong id="personalityLabel">Bestie Mode</strong>
+      </label>
+
+      <input
+        type="range"
+        id="personalitySlider"
+        min="1"
+        max="5"
+        value="3"
+        step="1"
+      >
+
+      <div class="personality-scale">
+        <span>🪽 Angel</span>
+        <span>💋 Menace</span>
+      </div>
+
+    </section>
+
+
+    <!-- TEA COURT -->
+    <section class="card tea-card" id="tea-court">
+
+      <h3>🌹 The Tea Court</h3>
+
+      <p>Drop the lore. The court is listening.</p>
+
+      <textarea
+        id="teaInput"
+        placeholder="so basically, this person..."
+        rows="5"
+        maxlength="1000"
+      ></textarea>
+
+      <button class="bestie-button" id="judgeTea" type="button">
+        submit evidence 💅
+      </button>
+
+      <div
+        id="teaVerdict"
+        class="tea-verdict"
+        aria-live="polite"
+        hidden
+      ></div>
+
+    </section>
+
+
+    <!-- JOURNAL -->
+    <section class="card" id="journal">
+
+      <h3>🦢 A thought to keep</h3>
+
+      <p>A tiny journal for whatever is on your mind.</p>
+
+      <label class="sr-only" for="journalInput">
+        Your journal note
+      </label>
+
+      <textarea
+        id="journalInput"
+        placeholder="Dear diary..."
+        rows="5"
+      ></textarea>
+
+      <div class="journal-footer">
+
+        <p class="hint" id="saveStatus">
+          Your note stays in this browser.
+        </p>
+
+        <button
+          class="clear-button"
+          id="clearJournal"
+          type="button"
+        >
+          clear note
+        </button>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  made with <span>♥</span> and a little bit of daydreaming
+</footer>
+
 </main>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 </body>
 </html>
